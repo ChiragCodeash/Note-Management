@@ -230,7 +230,7 @@ const ListNote = () => {
             </div>
             <div className="text-center">
               <h3 className="fs-6 fw-bolder">
-                {noteData && noteData.length === 0 ? "No Notes" : ""}
+                {noteData && noteData.length == 0 ? "No Notes" : ""}
               </h3>
             </div>
           </div>
@@ -238,7 +238,7 @@ const ListNote = () => {
       </div>
 
       {/* Add Modal */}
-      <Modal show={show} onHide={handleClose} centered>
+      <Modal show={show} onHide={handleClose} centered  backdrop="static">
         <Modal.Header closeButton>
           <Modal.Title>Add Notes</Modal.Title>
         </Modal.Header>
@@ -321,7 +321,7 @@ const ListNote = () => {
       </Modal>
 
       {/* Delete Modal */}
-      <Modal show={deleteModalshow} onHide={handleDeleteClose}>
+      <Modal show={deleteModalshow} onHide={handleDeleteClose}  backdrop="static">
         <Modal.Header closeButton>
           <Modal.Title>Delete Notes</Modal.Title>
         </Modal.Header>
@@ -344,7 +344,7 @@ const ListNote = () => {
       </Modal>
 
       {/* Update Modal */}
-      <Modal show={updateModalshow} onHide={handleUpdateClose} centered>
+      <Modal show={updateModalshow} onHide={handleUpdateClose} centered  backdrop="static">
         <Modal.Header closeButton>
           <Modal.Title>Update Notes</Modal.Title>
         </Modal.Header>
