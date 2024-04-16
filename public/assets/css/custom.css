@@ -1,0 +1,12 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+}
+
+.error-input {
+  background: #ff00001c;
+  border-color: red;
+}
