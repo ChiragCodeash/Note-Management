@@ -3,20 +3,20 @@ import React, { useState } from "react";
 const InstallButton = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
 
-  const handleInstall = () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
+//   const handleInstall = () => {
+//     if (deferredPrompt) {
+//       deferredPrompt.prompt();
 
-      deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === "accepted") {
-          console.log("User accepted the install prompt");
-        } else {
-          console.log("User dismissed the install prompt");
-        }
-        setDeferredPrompt(null);
-      });
-    }
-  };
+//       deferredPrompt.userChoice.then((choiceResult) => {
+//         if (choiceResult.outcome === "accepted") {
+//           console.log("User accepted the install prompt");
+//         } else {
+//           console.log("User dismissed the install prompt");
+//         }
+//         setDeferredPrompt(null);
+//       });
+//     }
+//   };
 
   const handleBeforeInstallPrompt = (event) => {
     event.preventDefault();

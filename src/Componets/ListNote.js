@@ -230,7 +230,7 @@ const ListNote = () => {
             </div>
             <div className="text-center">
               <h3 className="fs-6 fw-bolder">
-                {noteData && noteData.length == 0 ? "No Notes" : ""}
+                {noteData && noteData.length === 0 ? "No Notes" : ""}
               </h3>
             </div>
           </div>

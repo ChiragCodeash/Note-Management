@@ -87,10 +87,10 @@ const updateItem = (id, updatedItem) => {
   const Data = getAllItems("all");
   var index;
   const oldData = Data.filter((item, i) => {
-    if (item.id == id) {
+    if (item.id === id) {
       index = i;
     }
-    return item.id == id;
+    return item.id === id;
   })[0];
   Data.splice(index, 1, { ...oldData, title, category, description });
   localStorage.setItem(STORE_NAME, JSON.stringify(Data));

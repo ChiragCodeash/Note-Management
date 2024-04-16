@@ -1,6 +1,5 @@
 import {
   IconDotsVertical,
-  IconStar,
   IconTrash,
   IconStarFilled,
   IconBriefcaseFilled,
@@ -33,16 +32,16 @@ const NoteCard = ({ data , OnDelete , OnUpdate  }) => {
         </div>
         <div className="d-flex align-items-center">
           <div className="link me-1" title={category}>
-            {category == "social" ? (
+            {category === "social" ? (
               <IconShare stroke={2} height={16} width={16} title={"Social"} />
-            ) : category == "business" ? (
+            ) : category === "business" ? (
               <IconBriefcaseFilled
                 stroke={2}
                 height={16}
                 width={16}
                 title={"Business"}
               />
-            ) : category == "important" ? (
+            ) : category === "important" ? (
               <IconStarFilled
                 stroke={2}
                 height={16}
@@ -63,8 +62,7 @@ const NoteCard = ({ data , OnDelete , OnUpdate  }) => {
             <div className="category-selector btn-group">
               <button
                 className="nav-link category-dropdown label-group p-0"
-                data-bs-toggle="dropdown"
-                role="button"
+                
                 aria-haspopup="true"
                 aria-expanded="true"
               >
