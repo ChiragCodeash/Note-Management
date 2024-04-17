@@ -89,6 +89,7 @@
   "display": "fullscreen",
   "theme_color": "#213876",
   "background_color": "#213876",
+  "prefer_related_applications" : true,
   "related_applications": [
     {
       "platform": "webapp",

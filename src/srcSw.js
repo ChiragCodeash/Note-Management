@@ -85,16 +85,37 @@ registerRoute(
 //   })
 // );
 
-var deferredPrompt
-self.addEventListener('beforeinstallprompt', (event) => {
-  // Prevent Chrome 76 and later from showing the mini-infobar
-  event.preventDefault();
-  // Stash the event so it can be triggered later.
-   deferredPrompt = event;
-  // Optionally, show your custom install prompt
-  showInstallPrompt();
-});
 
-function showInstallPrompt() {
-  deferredPrompt.prompt();
-}
+// var deferredPrompt
+// self.addEventListener('beforeinstallprompt', (event) => {
+  
+//   event.preventDefault();
+  
+//    deferredPrompt = event;
+//    console.log("showInstallPrompt")
+  
+//   showInstallPrompt();
+// });
+
+// function showInstallPrompt() {
+//   // console.log("Run")
+//   deferredPrompt.prompt();
+// }
+// // showInstallPrompt()
+
+// let deferredPrompt;
+//     self.addEventListener('beforeinstallprompt', (e) => {
+//         deferredPrompt = e;
+//     });
+
+//     const installApp = self.getElementById('installBtn');
+//     installApp.addEventListener('click', async () => {
+//       console.log("Run")
+//         // if (deferredPrompt !== null) {
+//         //     deferredPrompt.prompt();
+//         //     const { outcome } = await deferredPrompt.userChoice;
+//         //     if (outcome === 'accepted') {
+//         //         deferredPrompt = null;
+//         //     }
+//         // }
+//     });

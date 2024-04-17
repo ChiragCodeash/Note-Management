@@ -11,6 +11,7 @@ import Modal from "react-bootstrap/Modal";
 import NoteCard from "./Common/NoteCard";
 import moment from "moment";
 import { addItem, getAllItems, updateItem, deleteItem } from "../db/db";
+import InstallButton from "./Install";
 
 const ListNote = () => {
   const [activeList, setActiveList] = useState("all");
@@ -142,8 +143,11 @@ const ListNote = () => {
           <div className="card bg-info-subtle shadow-none position-relative overflow-hidden mb-4">
             <div className="card-body px-4 py-3">
               <div className="row align-items-center">
-                <div className="col-9">
-                  <h4 className="fw-semibold m-0">Manage Notes</h4>
+                <div className="col-12">
+                  <div className="d-flex justify-content-between">
+                  <h4 className="align-content-center fw-semibold m-0">Manage Notes</h4>
+                  <InstallButton/>
+                  </div>
                 </div>
               </div>
             </div>
