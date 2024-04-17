@@ -91,7 +91,6 @@ const InstallButton = () => {
 
   return (
     <div>
-     
       {showInstallPrompt && (
         <button
           className="btn btn-primary d-flex align-items-center px-3 gap-6"

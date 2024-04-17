@@ -93,7 +93,7 @@
   "related_applications": [
     {
       "platform": "webapp",
-      "url": "http://localhost:3000/manifest.json"
+      "url": "https://note-manage.netlify.app/manifest.json"
     }
   ]
 }
